@@ -8,10 +8,12 @@
     --color-hero-button: #188CE8;
     --color-bag-hero: #2F303A;
     --secondary-background-color: #f5f4fa;
+    --background-hero: #c4c4c4;
     --letter-spacing-priority: 0.06em;
     --letter-spacing:  0.03em;
     --portfolio-header-line: 1px solid #ececec;
     --portfolio-border-item: 1px solid #eeeeee;
+    --hero-overlay: rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -171,18 +173,35 @@ img {
 
 /* hero */
 .hero {
-    background-color:var(--color-bag-hero);
     padding: 200px 0px;
     text-align: center;
+  padding: 200px 0px;
+
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+
+  background-image: linear-gradient(
+      to right,
+      var(--hero-overlay),
+      var(--hero-overlay)
+    ),
+    url('../photo/photo_icon/bg_hero.png');
+    background-color: var(--background-hero);
 }
 .hero-title {
     margin-bottom: 30px;
+    height: 120px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     color:var(--secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing:var(--letter-spacing-priority);
-
+    text-transform: uppercase;
 }
 .hero-bt {
     background-color: var(--focus-text-color);
@@ -191,7 +210,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 30px;
     min-width: 200px;
     height: 50px;
     font-weight: 700;
