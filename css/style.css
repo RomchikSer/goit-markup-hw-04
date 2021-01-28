@@ -141,18 +141,34 @@ img {
 }
 
 .header-contacts-link {
+    display: flex;
+    align-items: center;
     color: var(--tel-mail-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
-
+    letter-spacing: 0.02em;
 }
+
 .header-contacts-link:hover,
 .header-contacts-link:focus {
     color: var(--focus-text-color);
 }
+.contacts-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.envelope {
+    width: 16px;
+    height: 12px;
+}
+.smartphone {
+    width: 10px;
+    height: 16px;
+}
+
 /* hero */
 .hero {
     background-color:var(--color-bag-hero);
