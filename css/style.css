@@ -14,6 +14,7 @@
     --portfolio-header-line: 1px solid #ececec;
     --portfolio-border-item: 1px solid #eeeeee;
     --hero-overlay: rgba(47, 48, 58, 0.4);
+    --primery-icons-color: #AFB1B8;
 }
 
 body {
@@ -318,6 +319,36 @@ img {
     line-height: 1.87;
     text-align: center;
     margin: 0;
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-social-link {
+    fill: var(--primery-icons-color);
+}
+.social-icons {
+    width: 20px;
+    height: 20px;
+  }
+.social-link:hover,
+.social-link:focus,
+.social-icons:hover,
+.social-icons:focus {
+  background-color: var(--focus-text-color);
+  fill: var(--secondary-text-color);
 }
 
 /* main-bt portfolio */
