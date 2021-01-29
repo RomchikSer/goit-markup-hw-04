@@ -15,6 +15,7 @@
     --portfolio-border-item: 1px solid #eeeeee;
     --hero-overlay: rgba(47, 48, 58, 0.4);
     --primery-icons-color: #AFB1B8;
+    --footer-social-bgc: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -449,6 +450,12 @@ img {
 .portfolio-container {
     padding: 20px 24px;
 }
+.main-list {
+    background: var(--secondary-text-color);
+    border: var(--portfolio-border-item);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .main-list .main-list-item {
     width: 370px;
     border: var(--portfolio-border-item);
@@ -458,6 +465,13 @@ img {
 }
 .main-list .main-list-item:not(:nth-last-child(-n + 3)) {
     margin-bottom: 30px;
+}
+.main-list .main-list-link:hover,
+.main-list .main-list-link:focus {
+    box-shadow: 0px 1px 1px 
+    rgba(0, 0, 0, 0.12), 0px 4px 4px 
+    rgba(0, 0, 0, 0.06), 1px 4px 6px 
+    rgba(0, 0, 0, 0.16);
 }
 
 .main-list-title {
@@ -492,15 +506,16 @@ img {
 
 }
 .address {
-    margin: 0;
-    margin-bottom: 9px;
+    margin-right: 70px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+
 }
 .map-link {
     color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    font-style: normal;
+    margin: 0;
+    margin-bottom: 9px;
 }
 .map-link:hover,
 .map-link:focus {
@@ -524,9 +539,31 @@ img {
 .footer-contacts .footer-contacts-link:not(:last-child) {
     margin-bottom: 9px;
 }
+.soc-fot-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  
+.footer-social-icons {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-text-color);
+}
+.footer-soc-list {
+    display: flex;
+}
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-social-bgc);
+}
 .footer .container {
     display: flex;
-  align-items: baseline;
-}
+    align-items: baseline;
+  }
 
 
